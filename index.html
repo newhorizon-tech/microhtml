@@ -8,7 +8,7 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    Hello World, we are software developers!
+
     <!--
 
     Hello Camper!
@@ -21,36 +21,45 @@
     - The freeCodeCamp Team
 
     -->
-    <h1 id="title">Survey about your favorite food</h1>
-    <p id="description">This is a survey to ask you about you favorite food</p>
+
+    <h1 id="title">Food survey </h1>
+    <p id="description">Please enter your detials before answering the survey</p>
     <form id="survey-form">
-      <label for="name" id="name-label">Name:</label>
-      <input type="text" id="name" placeholder="Name" required></input><br><br><br>
-      <label for="email" id="email-label">Email: </label>
-      <input type="email" id="email" placeholder="Email" required></input><br><br><br>
-      <label for="number" id="number-label">Number: </label>
-      <input type="number" id="number" placeholder="Number" min="10" max="12"><br><br><br>
-      <select id="dropdown">Food:
-        <option>Select food</option>
-        <option value="1">Cake</option>
-        <option value="2">Burger</option>
-      </select><br><br><br>
-      <label for="Gender">Gender: </label>
-      <label for="male">Male </label>
-      <input type="radio" name="Gender" id="male" value="male">
-      <label for="female">Female</label>
-      <input type="radio" name="Gender" id="female" value="female"><br><br>
-      <label for="check">Your favorite Sport: </label>
-      <label for="fotball">football</label>
-      <input type="checkbox" id="football" value="football">
-      <label for="running">Running </label>
-      <input type="checkbox" id="running" value="running">
-      <label for="swimming">Swimming </label>
-      <input type="checkbox" id="swimming" value="Swimming"><br><br>
-      <label for="comment">Comment: </label>
-      <textarea id="comment"></textarea><br>
-      <input type="submit" value="submit" id="submit">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="John Doe" required> <br> <br>
+      <label for="email" id="email-label">E-mail</label>
+      <input type="email" id="email" placeholder="johndoe@email.com" required> <br> <br>
+      <label for="number" id="number-label">Number</label>
+      <input type="number" id="number" placeholder="10-digit number" min=100000000 max=9999999999> <br> <br>
+
+      Food preferences
+      <ol>
+      <li> Do you like spicy food?</li>
+      <select id="dropdown">
+        <option value="spicy">Yes. I like spicy food</option>
+        <option value="non-spicy">No. I don't like spicy food</option>
+      </select>
+      <br><br>
+      <li> What type of cusiines do you like?</li>
+      <input type="checkbox" value="chinese" > Chinese food <br>
+      <input type="checkbox" value="american"> American food <br>
+      <input type="checkbox" value="mexican" > Mexican food <br>
+      <br><br>
+      <li> Do you drink alcohol?</li>
+      <input type="radio" value="alcohol" name="cuisine"> I drink alcohol <br>
+      <input type="radio" value="no-alcohol" name="cuisine"> I don't drink alcohol <br>
+      <br>
+      <li>Describe the best food exprience you have had (At your home, at a party, at a restaurant etc)?</li>
+      <textarea> </textarea>
+      <br>
+      <input type="submit" id=submit value="submit">
+      </ol>
+
+
+
+
     </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
+
